@@ -10,6 +10,11 @@ nav {
 a {
   color: white;
   margin: 40px;
+/* Add the active link style here, after your general link styles */
+#active {
+  background-color: white;
+  color: steelblue;
+}
 }
 h1 {
   color: steelblue;
@@ -21,6 +26,12 @@ img {
 p {
   padding: 10px;
 }
+/* Add this for the main paragraph font size and line height */
+.main-para {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
 footer {
   background-color: steelblue;
   color: white;
