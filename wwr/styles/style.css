@@ -1,0 +1,109 @@
+/* Limit the width of the entire page content */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #fdf8f0
+;
+}
+    nav, a {
+        text-align: center;
+        text-decoration: none;
+    }
+#hero-msg h1,
+#hero-msg h4 {
+    text-align: center;
+}
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+#background {
+    height: 725px;
+}
+/*Background and Text Colors (using hex codes)*/
+
+/* Page background */
+body {
+    background-color: #ffffff;   /* white */
+    color: #393939;              /* dark gray text */
+}
+
+/* Header background */
+header {
+    background-color: rgba(15, 111, 162, 0.7); /* primary color with transparency */
+}
+/* Navigation hover effect */
+nav a:hover {
+    background-color: #0f6fa2;   /* primary blue */
+    color: #ffffff;              /* white text */
+}
+/* Home title*/
+.home-title {
+    color: #0f6fa2;   /* primary blue */
+}
+h4 {
+    color: black;
+}
+/* Buttons (Book Now, Join Us) */
+.book, .join {
+    background-color: #E6AB2D;   /* secondary gold */
+    color: #ffffff;              /* white text */
+    text-decoration: none;
+}
+/* Button hover effect */
+.book:hover, .join:hover {
+    background-color: #0f6fa2;   /* primary blue */
+    color: #ffffff;              /* white text */
+}
+
+/* Background section (like hero area or wide image block) */
+#background {
+    background-color: #0f6fa2;   /* primary blue */
+}
+
+/* Message section */
+.msg {
+    background-color: #E6AB2D;   /* secondary gold */
+}
+.msg h2 {
+    color: #ffffff;
+}
+.msg p {
+    color: #0f6fa2;   /* primary blue */
+}
+/* Footer */
+footer {
+    background-color: #393939;   /* dark gray */
+    color: #ffffff;              /* white text */
+}
+footer a {
+    background-color: #393939;   /* dark gray */
+    color: #ffffff;              /* white text */
+    text-decoration: none;
+}
+footer a:hover {
+    background-color: #ffffff;
+    color: #0f6fa2;   /* primary blue */
+}
+.logo {
+    width: 80px;
+    height: auto;
+}
+.icon {
+    width: 80px;
+    height: auto;
+}
+#hero-img {
+    width: 100%;
+    height: auto;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}    
+

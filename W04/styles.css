@@ -1,0 +1,38 @@
+/* set background color */
+body {
+    background-color: #5da0d7;
+}
+/* Font for H1, <p> with president Nelson, and footer*/
+h1, footer, .principles, header p.second-paragraph {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Center header, figure, blockquote, and footer */
+header, figure, blockquote, footer {
+    text-align: center;
+}
+.principles {
+    width: 19%;
+    margin: 0 auto;
+    text-align: left;
+}
+header, blockquote {
+    color: #ffffff;
+}
+blockquote {
+    font-size: 2em;
+}
+figure img {
+    width: 10%;
+    height: auto;
+} 
+p {
+    width: 100%;
+}
+.principles, header p.second-paragraph {
+    font-weight: bold;
+}
+h1:hover {
+    color: black;
+}
+h1 {
+    font-size: 3em;
