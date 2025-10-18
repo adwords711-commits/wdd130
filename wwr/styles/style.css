@@ -1,3 +1,43 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Chocolate+Classical+Sans&display=swap');
+
+:root {
+  
+  --heading-font: "Chocolate Classical Sans";
+  --paragraph-font: 'Bellota Text', 'Times Roman', Lato;
+}
+body {
+    background-color: #ffffff;   /* white */
+    color: #393939;              /* dark gray text */
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+    
+.home-title {
+    font-family: 'Bellota Text', 'Times Roman', Lato;
+    font-size: 2em;
+}
+.book, .join {
+    font-family: 'Bellota Text', 'Times Roman', Lato;
+    font-size: 18px;
+}
+.msg p {
+    font-family: 'Bellota Text', 'Times Roman', Lato;
+    font-size: .8em;
+}
+.home-title, .book,
+.join,
+footer p a {
+    font-family: var(--heading-font);
+}
+
 /* Limit the width of the entire page content */
 #content {
     max-width: 1600px;
@@ -5,10 +45,11 @@
     background-color: #fdf8f0
 ;
 }
-    nav, a {
-        text-align: center;
-        text-decoration: none;
-    }
+nav a {
+    text-align: center;
+    text-decoration: none;
+    padding: 35px;
+}
 #hero-msg h1,
 #hero-msg h4 {
     text-align: center;
@@ -23,13 +64,6 @@ main section {
 #background {
     height: 725px;
 }
-/*Background and Text Colors (using hex codes)*/
-
-/* Page background */
-body {
-    background-color: #ffffff;   /* white */
-    color: #393939;              /* dark gray text */
-}
 
 /* Header background */
 header {
@@ -43,20 +77,25 @@ nav a:hover {
 /* Home title*/
 .home-title {
     color: #0f6fa2;   /* primary blue */
+    margin-top: 10px;
 }
 h4 {
     color: black;
 }
 /* Buttons (Book Now, Join Us) */
 .book, .join {
-    background-color: #E6AB2D;   /* secondary gold */
+    background-color: #0f6fa2;   /* secondary gold */
     color: #ffffff;              /* white text */
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 /* Button hover effect */
 .book:hover, .join:hover {
-    background-color: #0f6fa2;   /* primary blue */
-    color: #ffffff;              /* white text */
+    background-color: #ffffff;   /* primary blue */
+    color: #0f6fa2;              /* white text */
 }
 
 /* Background section (like hero area or wide image block) */
@@ -67,17 +106,23 @@ h4 {
 /* Message section */
 .msg {
     background-color: #E6AB2D;   /* secondary gold */
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: #ffffff;
-}
+    font-family: var(--heading-font);
+    }
 .msg p {
     color: #0f6fa2;   /* primary blue */
+    padding-bottom: 15px;
 }
 /* Footer */
 footer {
     background-color: #393939;   /* dark gray */
     color: #ffffff;              /* white text */
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     background-color: #393939;   /* dark gray */
@@ -88,13 +133,10 @@ footer a:hover {
     background-color: #ffffff;
     color: #0f6fa2;   /* primary blue */
 }
-.logo {
-    width: 80px;
-    height: auto;
-}
 .icon {
     width: 80px;
     height: auto;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -105,5 +147,31 @@ footer p {
 }
 footer p a:hover {
     text-decoration: underline;
-}    
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+#logo_link {
+    padding-top: 10px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+main {
+    padding: 20px 0;
+}
+.card-img {
+    border: 10px solid #0f6fa2;
+}
+main img {
+    box-sizing: border-box;
+}
 
+.mountains {
+    padding: 100px 0;
+} 
