@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: aqua;
+    padding: 10px;
+}
+.left {
+    background-color: #ffffff;
+    border: solid black;
+    
+    font-size: 200px;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right {
+    background-color: lightgray;
+    border: solid black;
+    
+    font-size: 30px;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left h1 {
+    grid-column: 1/3;
+}
