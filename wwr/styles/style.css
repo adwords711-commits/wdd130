@@ -273,3 +273,90 @@ nav {
     }
 }
 
+
+/* THIS IS THE CSS FOR THE ADVENTURES PAGE*/
+
+.adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+.salmon-text {
+    grid-column: 2/6;
+    grid-row: 2/3;
+    text-align: left;
+    padding: 40px;
+    align-self: center;
+    padding-top: 80PX;
+}
+.salmon-river {
+    grid-column: 6/10;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    padding-top: 80px;
+    
+}
+
+.idaho-card {
+    grid-column: 2/4;
+    grid-row: 4/5;
+    justify-content: center;
+    padding-top: 80px;
+}
+.utah-card {
+    grid-column: 5/7;
+    grid-row: 4/5;
+    padding-top: 80px;
+}
+.arizona-card {
+    grid-column: 8/10;
+    grid-row: 4/5;
+    padding-top: 80px;
+}
+.idaho-card, .utah-card, .arizona-card { 
+        margin: 50px auto;
+        width: 100%;
+    }
+.beautiful-river {
+    grid-column: 2 / 10;
+    grid-row: 6 / 7;
+    
+
+.beautiful-river h2 {
+    text-align: center;
+}
+
+}
+.beautiful-river img {
+    width: 100%;
+    padding-top: 80px;
+}
+.idaho-card h2, .utah-card h2, .arizona-card h2 {
+    font-size:x-large;
+    text-align: center;
+}
+.idaho-card h3, .utah-card h3, .arizona-card h3 {
+    font-size: large;
+    text-align: left;
+}
+.contact-info h2 {
+    text-align: center;
+}
+.contact-info {
+    grid-column: 4 / 8;       
+    grid-row: 8 / 9;          
+    padding: 20px;
+    background-color: #0f6fa2; 
+    border-radius: 20px;
+    min-height: 100px;
+    margin-top: 50px;
+    justify-self: stretch;
+    align-self: center;
+    text-align: center;
+    color:#ffffff;
+}
+.contact-info a {
+    color: #ffffff;
+}
