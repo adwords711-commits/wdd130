@@ -322,13 +322,12 @@ nav {
 .beautiful-river {
     grid-column: 2 / 10;
     grid-row: 6 / 7;
-    
+}   
 
 .beautiful-river h2 {
     text-align: center;
 }
 
-}
 .beautiful-river img {
     width: 100%;
     padding-top: 80px;
