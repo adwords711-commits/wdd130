@@ -38,19 +38,23 @@
                 <h2>Hello and welcome! I'm Jorge Gonzales, and I'm glad you are here.</h2>
             </section>
             
-            <section class="profile-text">
+            <div class="profile-text">
+                <h2>About Me</h2>
                 <p>I’m passionate about learning, personal growth, and using creativity to solve real-world challenges. This website is a space where I share my professional journey, ideas, and projects that reflect my dedication to continuous improvement and meaningful work.</p>
                 <p>I believe small steps lead to meaningful progress. Every project, challenge, and experience teaches me something new, and I’m excited to keep learning and growing along the way.</p>
-            </section>
-            <section class="business-1">    
-                    <img class="business-img-1" src="images/Untitled-2.jpg" alt="Group business meeting image">    
-            </section>    
-            <section class="business-2">    
-                    <img class="business-img-2" src="images/banner.jpg" alt="Banner with business charts">    
-            </section>
-            <section class="digital-marketing">    
-                    <img class="digital-marketing-img" src="images/Untitled-3.jpg" alt="Yellow digital-marketing image">    
-            </section>
+            </div>
+            <div class="business-1">    
+                <h2>Teamwork</h2>    
+                <img class="business-img-1" src="images/Untitled-2.jpg" alt="Group business meeting image">    
+            </div>    
+            <div class="business-2">    
+                <h2>Buisness Insights</h2>    
+                <img class="business-img-2" src="images/banner.jpg" alt="Banner with business charts">    
+            </div>
+            <div class="digital-marketing">    
+                <h2>Digital Marketing</h2>    
+                <img class="digital-marketing-img" src="images/Untitled-3.jpg" alt="Yellow digital-marketing image">    
+            </div>
             <section class="career-text">
                 <h2>Areas of Experience</h2>
                 <p>I specialize in three key areas: Business Management, where I streamline operations and drive growth; Finance, ensuring accurate financial records and smooth accounting processes; and Database Administration, managing and optimizing data systems to support informed decision-making. My combined expertise allows me to bring structure, efficiency, and insight to any project or organization.</p>
@@ -76,11 +80,11 @@
                 <form action="/my-handling-form-page" method="post">
                 <p>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" />
+                    <input type="text" id="name" name="user_name">
                 </p>
                 <p>
                     <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="user_email" />
+                    <input type="email" id="mail" name="user_email">
                 </p>
                 <p>
                     <label for="msg">Message:</label>
@@ -105,24 +109,24 @@
                 </a>    
             </div>
         </footer>
-        </div>
-        <script>
-            // get the feedback div element so we can do something with it.
-            const feedbackElement = document.getElementById('feedback');
-            // get the form so we can read what was entered in it.
-                const formElement = document.forms[0];
-            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-            formElement.addEventListener('submit', function(e) {
-                // stop the form from doing the default action.
-                e.preventDefault();
-                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-                // make the feedback element visible.
-                feedbackElement.style.display = "block";
-                // add a class to move everything down so our message doesn't cover it.
-                document.body.classList.toggle('moveDown');
-            });
-        </script>
-    </div>        
+    </div>
+
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully.
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 </html>
