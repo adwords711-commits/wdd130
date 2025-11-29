@@ -1,0 +1,302 @@
+:root {
+  --primary-color: #0081A7;
+  --secondary-color: #F07167;
+  --accent1-color: #00AFB9;
+  --accent2-color: #FDFCDC;
+
+  --heading-font: Helvetica, Arial, sans-serif;
+  --paragraph-font: Tahoma, Verdana, sans-serif;
+}
+
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #FDFCDC;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+/* HEADER */
+header {
+    background-color: #00AFB9;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/* LOGO */
+#logo_link {
+    justify-self: start;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block; /* removes inline gap */
+}
+
+/* NAVIGATION */
+
+nav a {
+    font-family: var(--heading-font);
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+nav a:hover {
+    background-color: #F07167;
+    color: white;
+    border-radius: 5px;
+}
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    padding: 0;
+    gap: 0;
+}
+
+/* ------------------------------ */
+/* HERO GRID (3 columns)          */
+/* ------------------------------ */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+/* Background image */
+#hero-box {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    z-index: 1;
+}
+
+#hero-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: .7;
+}
+
+/* Overlapping center profile image */
+#hero-img-2 {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    border-radius: 50%;
+    border: 5px solid #00AFB9;
+}
+
+/* Center text */
+#hero-msg {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    z-index: 3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    color: #0081A7;
+    margin-top: -220px;
+    font-size: 32px;
+}
+.button-box {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #F07167;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.button-box a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+}
+.button-box:hover {
+    background-color: #00AFB9;
+    color: white;
+}
+/* ------------------------------ */
+/* HOME GRID: 10 COLUMNS          */
+/* ------------------------------ */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+    padding: 60px;
+}
+.home-intro {
+    grid-column: 2/10;
+    grid-row: 1/2;
+    font-size: 20px;
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+/* Profile text (left side) */
+.profile-text {
+    grid-column: 1 / 6;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Right-side large image */
+.business-1 {
+    grid-column: 6 / 11;
+    grid-row: 2/3;
+    margin: 20px;
+}
+
+.business-img-1 {
+    width: 100%;
+    
+}
+
+/* Banner image full width under first row */
+.business-2 {
+    grid-column: 1 / -1;
+    grid-row: 3/4;
+    margin: 0 -50px;
+}
+
+.business-img-2 {
+    width: 100%;
+    margin: 50px 0 30px 0;
+}
+
+/* Digital marketing image left side */
+.digital-marketing {
+    grid-column: 1 / 5;
+    grid-row: 4/6;
+    margin: 10px 0;
+}
+
+.digital-marketing-img {
+    width: 100%;
+}
+
+/* Career text center section */
+.career-text {
+    grid-column: 6 / 11;
+    grid-row: 4/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+/* Cards for experience */
+.business-card {
+    grid-column: 3 / 4;
+    grid-row: 6/7;
+    text-align: center;
+}
+
+.database-card {
+    grid-column: 5 / 7;
+    grid-row: 6/7;
+    text-align: center;
+}
+
+.finance-card {
+    grid-column: 8 / 9;
+    grid-row: 6/7;
+    text-align: center;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Contact form */
+.contact-form {
+    grid-column: 5 / 7;
+    grid-row: 8/9;
+    padding: 20px;
+    background-color: #00AFB9;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.contact-form button {
+    background-color: #F07167;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* ------------------------------ */
+/* FOOTER GRID (3 columns)        */
+/* ------------------------------ */
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0081A7;
+    color: white;
+    gap: 20px;
+}
+
+footer p, footer a {
+    margin: 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+footer .copyright {
+    justify-self: start;
+}
+footer .sitemap {
+    justify-self: start;
+    text-align: center;
+}
+footer .contact {
+    justify-self: center;
+    text-align: center;
+}
+footer .social {
+    justify-self: end;
+    display: flex;
+    gap: 10px;
+}
+footer .social img {
+    width: 40px;
+    height: auto;
+}
