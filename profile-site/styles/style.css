@@ -322,7 +322,15 @@ footer .social img {
     gap: 20px;
     padding: 60px;
 }
-
+.about-me-page #hero-img {
+    height: 250px;
+}
+.about-me-page #hero-msg {
+    margin-top: 1px  
+}
+.about-me-page main {
+    padding-top: 20px;
+}
 /* LEFT IMAGE */
 #networkImg {
     grid-column: 1 / 6;
