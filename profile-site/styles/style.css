@@ -369,7 +369,7 @@ footer .social img {
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #ccc;
+  color: #FDFCDC;
   padding: 10px 0;
   height: 150px;
 }
@@ -390,7 +390,7 @@ footer .social img {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: #ffffff;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -398,7 +398,7 @@ footer .social img {
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: #F07167bb;
   text-decoration: none;
   cursor: pointer;
 }
