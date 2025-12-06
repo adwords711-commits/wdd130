@@ -10,7 +10,7 @@
     <div id="content">
         <header>
             <a id="logo_link" href="index.html">
-                <img class="logo" src="images/profile-logo.png" "Profile Logo">
+                <img class="logo" src="images/profile-logo.png" alt="Profile Logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -20,97 +20,129 @@
         </header>
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/about-me-hero.jpg" alt="about me teal and yello background img">
+                <img id="hero-img" src="images/about-me-hero.jpg" alt="about me teal and yellow background img">
             </div>
 
             <section id="hero-msg">
                 <h1 class="about-me-title">About Me</h1>
-                <h4>Jorge Gonzlales</h4>
+                <h4>Jorge Gonzales</h4>
                 <div class="button-box">
                     <a class="LearnMore" href="contact.html">Contact</a>
                 </div>
             </section>
         </div>
         <main class="about-me-grid">
-            <section>
-                <div class="network">    
-                    <img class="network-img" src="images/database-pic.jpg" alt="hands typing in laptop keyword">    
-                </div>
-            </section>  
             
-            <section class="profile-text">
+            
+            <img id="networkImg" class="modal-trigger" src="images/database-pic.jpg" alt="network Image">
+             
+            
+            <section class="profile-text-about-me">
                 <h2>About Me</h2>
                 <p>Hello! My name is Jorge Gonzales Aguilar, and I am a dedicated professional with a strong background in business management, marketing, and database administration. The purpose of my website is to showcase my professional portfolio in a way that reflects both my technical skills and business experience. My goal is to provide a clear picture of who I am, what I have accomplished, and how my abilities can contribute to the success of an organization.</p>
                 <p>Over the years, I have developed a unique combination of analytical, strategic, and technical skills. My background in business management has allowed me to gain experience in areas such as financial operations, team leadership, and organizational planning. I enjoy analyzing business performance, identifying areas for improvement, and applying data-driven solutions to achieve measurable results.</p>
                 <p>In addition to management, I have a growing passion for marketing and data technology. I have worked on marketing strategies designed to strengthen brand identity and improve customer engagement. Through my studies and professional experience, I have learned how to use data to support smarter business decisions. My technical training has given me the tools to manage databases, automate processes, and analyze information efficiently. These skills allow me to bridge the gap between business strategy and technology, something I consider one of my greatest strengths.</p>
             </section>
-            <section>
-                <div class="business">    
-                    <img class="business-img" src="images/Untitled-7.jpg" alt="blue sky and tall buildings image">    
-                </div>
-            </section> 
-            <section class="profile-text-2"
-                <p>My website will include three main topics. The first will focus on my professional background, describing my education in business management, relevant work experience, and leadership involvement. This section will also highlight how my studies at BYU–Idaho have shaped my career goals and strengthened my understanding of business principles</p>           
-                <p>The second topic will cover my skills and projects. Here, visitors can explore examples of my work with data, including how I use tools to solve problems and organize information. It will also include details about marketing projects, teamwork experiences, and other professional accomplishments that show my ability to plan strategically and think creatively</p>
-                <p>The third topic will focus on contact information and collaboration opportunities. It will invite visitors to connect with me for professional networking, potential employment, or collaborative projects</p>
-                <p>As I continue developing this website, my goal is to make it both informative and engaging for potential employers and recruiters in the fields of business, finance, and database administration. I want visitors to understand not only my qualifications but also my professional values: dedication, curiosity, and integrity. I am committed to lifelong learning and enjoy working in environments that encourage innovation and collaboration</p>
-                <p>Through this website, I hope to demonstrate how I can add value to an organization that appreciates strategic thinking, technical understanding, and a passion for growth</p>
+            
+            <img id="businessImg" class="modal-trigger" src="images/Untitled-7.jpg" alt="network Image">
+            
+            <section class="profile-text-about-me-2">
+                <p>My website will include three main topics. The first will focus on my professional background, describing my education in business management, relevant work experience, and leadership involvement. This section will also highlight how my studies at BYU–Idaho have shaped my career goals and strengthened my understanding of business principles.</p>           
+                <p>The second topic will cover my skills and projects. Here, visitors can explore examples of my work with data, including how I use tools to solve problems and organize information. It will also include details about marketing projects, teamwork experiences, and other professional accomplishments that show my ability to plan strategically and think creatively.</p>
+                <p>The third topic will focus on contact information and collaboration opportunities. It will invite visitors to connect with me for professional networking, potential employment, or collaborative projects.</p>
+                <p>As I continue developing this website, my goal is to make it both informative and engaging for potential employers and recruiters in the fields of business, finance, and database administration. I want visitors to understand not only my qualifications but also my professional values: dedication, curiosity, and integrity. I am committed to lifelong learning and enjoy working in environments that encourage innovation and collaboration.</p>
+                <p>Through this website, I hope to demonstrate how I can add value to an organization that appreciates strategic thinking, technical understanding, and a passion for growth.</p>
             </section>   
             
-            <h2>Contact Me</h2>
-            </section>
-
-            <div id="feedback"</div>
+            <section class="contact-form-1">
+                <h2>Contact Me</h2>
+                <div id="background"></div>
+                <div id="feedback"></div>
                 <form action="/my-handling-form-page" method="post">
                 <p>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" />
+                    <input type="text" id="name" name="user_name">
                 </p>
                 <p>
                     <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="user_email" />
+                    <input type="email" id="mail" name="user_email">
                 </p>
                 <p>
                     <label for="msg">Message:</label>
                     <textarea id="msg" name="user_message"></textarea>
                 </p>
-                <p class="button">
+                <p class="button-1">
                 <button type="submit">Send your message</button>
                 </p>
                 </form>
-    
+            </section>        
         </main>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+        </div>
         <footer>
-            <p>Personal Profile &copy; 2025 - Jorge Gonzales</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
-            <p><a href="contact.html">Contact</a></p>
+            <p class="copyright"> &copy; 2025 - Jorge Gonzales</p>
+            <p class="sitemap"><a href="site-plan.html">Site Plan</a></p>
+            <p class="contact"><a href="contact.html">Contact</a></p>
             <div class="social">
                 <a href="https://www.linkedin.com/in/jorge-gonzales-aguilar-520a54116/" target="_blank"> 
                     <img src="images/linkedIn-icon.png" alt="LinkedIn icon">
                 </a>
                 <a href="https://www.behance.net/jorgegonzales18" target="_blank">
                     <img src="images/behance-icon.png" alt="behance icon">
-                </a>
-                
+                </a>    
             </div>
         </footer>
     </div>
-        <script>
-            // get the feedback div element so we can do something with it.
-            const feedbackElement = document.getElementById('feedback');
-            // get the form so we can read what was entered in it.
-                const formElement = document.forms[0];
-            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-            formElement.addEventListener('submit', function(e) {
-                // stop the form from doing the default action.
-                e.preventDefault();
-                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-                // make the feedback element visible.
-                feedbackElement.style.display = "block";
-                // add a class to move everything down so our message doesn't cover it.
-                document.body.classList.toggle('moveDown');
-            });
-        </script>    
+
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully.
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+    <script>
+        // Modal elements
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        // All modal-trigger images
+        var images = document.getElementsByClassName("modal-trigger");
+        for (var i = 0; i < images.length; i++) {
+        images[i].onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+     }
+
+    // Close button
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+</script>
+
 </body>
 </html>
