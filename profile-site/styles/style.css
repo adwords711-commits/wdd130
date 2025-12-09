@@ -480,3 +480,59 @@ p {
     cursor: pointer;
     transition: 0.3s ease;
 }
+/* ------------------------------ */
+/* CSS CODE FOR CONTACT PAGE      */
+/* ------------------------------ */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr auto;
+    gap: 10px;
+    padding: 20px;
+    }
+.profile-text-contact {
+    grid-column: 3 / 9;   /* moved right to avoid overlap */
+    grid-row: 1/2;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    padding:  10px 30px;
+    line-height: 1.6;
+}
+.profile-text-contact h2 {
+    text-align: center;
+}
+/* CONTACT FORM */
+.contact-form-2 {
+    grid-column: 4 / 8;
+    grid-row: 2 / 4;
+    padding: 20px;
+    background-color: #00AFB9;
+    border-radius: 10px;
+    color: #ffffff;
+    
+    margin-bottom: 80px;
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+/* FIXED SELECTOR: button-2 must have a dot */
+.button-2 button {
+    background-color: #F07167;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.contact-form-2 input,
+.contact-form-2 textarea {
+    grid-column: 4/8;
+    width: 100%;
+    box-sizing: border-box;
+}
+    .contact-form-2 .button-2 {
+        text-align: center;
+}
