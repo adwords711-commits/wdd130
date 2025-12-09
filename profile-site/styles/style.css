@@ -91,7 +91,7 @@ header nav {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 }
 
 /* Background image */
@@ -273,7 +273,15 @@ header nav {
     cursor: pointer;
     transition: 0.3s ease;
 }
-
+.contact-form h2 {
+    text-align: center;
+}
+.contact-form .button {
+    text-align: center;
+}
+.button button:hover {
+    background-color: #0081A7;
+}
 /* ------------------------------ */
 /* FOOTER GRID (3 columns)        */
 /* ------------------------------ */
@@ -480,6 +488,15 @@ p {
     cursor: pointer;
     transition: 0.3s ease;
 }
+.contact-form-1 h2 {
+    text-align: center;
+}
+.contact-form-1 .button-1 {
+    text-align: center;
+}
+.button-1 button:hover {
+    background-color: #0081A7;
+}
 /* ------------------------------ */
 /* CSS CODE FOR CONTACT PAGE      */
 /* ------------------------------ */
@@ -488,8 +505,8 @@ p {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr 1fr auto;
-    gap: 10px;
-    padding: 20px;
+    gap: 5px;
+    padding: px;
     }
 .profile-text-contact {
     grid-column: 3 / 9;   /* moved right to avoid overlap */
@@ -497,7 +514,7 @@ p {
     flex-direction: column;
     justify-content: center;
     justify-self: center;
-    padding:  10px 30px;
+    padding:  40px 40px;
     line-height: 1.6;
 }
 .profile-text-contact h2 {
@@ -510,11 +527,13 @@ p {
     padding: 20px;
     background-color: #00AFB9;
     border-radius: 10px;
-    color: #ffffff;
-    
+    color: #ffffff; 
     margin-bottom: 80px;
     align-self: stretch;
     justify-self: stretch;
+}
+.contact-form-2 h2 {
+    text-align: center;
 }
 
 /* FIXED SELECTOR: button-2 must have a dot */
@@ -527,12 +546,15 @@ p {
     cursor: pointer;
     transition: 0.3s ease;
 }
+.button-2 button:hover {
+    background-color: #0081A7;
+}
 .contact-form-2 input,
 .contact-form-2 textarea {
     grid-column: 4/8;
     width: 100%;
     box-sizing: border-box;
 }
-    .contact-form-2 .button-2 {
+.contact-form-2 .button-2 {
         text-align: center;
 }
