@@ -498,7 +498,9 @@ footer .social img {
 /* ------------------------------ */
 /* CSS CODE FOR CONTACT PAGE      */
 /* ------------------------------ */
-
+.contact-page #hero-img {
+    height: 250px;
+}
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
